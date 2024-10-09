@@ -4,7 +4,22 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+La relación entre una imagen y un contenedor en Docker es similar a la de un plano y una casa:
+
+Imagen:
+- Plano: La imagen de Docker es como el plano de una casa. Contiene todas las instrucciones y especificaciones necesarias para construir - un entorno de ejecución (la "casa").
+- Inmutable: Una vez creada, la imagen no cambia. Es como un plano impreso que define una configuración específica.
+- Plantilla: Sirve como plantilla para crear uno o varios contenedores idénticos.
+
+Contenedor:
+
+- Casa: El contenedor es la instancia en ejecución de una imagen. Es la "casa" construida a partir del plano.
+- Dinámico: A diferencia de la imagen, el contenedor es un entorno activo que puede cambiar. Puedes ejecutar aplicaciones, modificar archivos, etc.
+- Aislado: Cada contenedor se ejecuta en un entorno aislado, como si fuera una casa independiente. Los cambios en un contenedor no afectan a otros contenedores ni al sistema anfitrión.
+  
+En resumen:
+- La imagen es la plantilla estática que define el entorno.
+- El contenedor es la instancia dinámica y en ejecución de esa imagen.
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
@@ -24,10 +39,13 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+
 # COMPLETAR
 
-**¿Qué es nginx**
-# COMPLETAR 
+**¿Qué es nginx?**
+Nginx es un software que actúa como un potente intermediario entre los usuarios que solicitan contenido web (como páginas web o imágenes) y los servidores que lo almacenan.
+
+Imaginemos un semáforo inteligente: Nginx dirige el tráfico web, asegurándose de que llegue al destino correcto de la manera más rápida y eficiente posible, a la vez que protege los servidores de sobrecargas.
 
 Descargar la imagen  **nginx** en la versión **alpine**
 # COMPLETAR
@@ -55,7 +73,7 @@ docker inspect <nombre imagen>:<tag>
 Inspeccionar la imagen hello-world 
 # COMPLETAR
 
-**¿Con qué algoritmo se está generando el ID de la imagen**
+**¿Con qué algoritmo se está generando el ID de la imagen?** sha256
 # COMPLETAR
 
 ### Filtrar imágenes
